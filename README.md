@@ -36,13 +36,20 @@ http://localhost:8080
 
 ```
 portfolio/
-├── main.go             # Main application server
-├── templates/          # HTML templates and fragments
-├── static/
-│   ├── css/            # Stylesheets for Matrix theme
-│   └── js/             # Matrix canvas animation scripts
+├── main.go             # Application entry point
+├── handlers/           # HTTP request handlers
+│   ├── pages.go        # Full page handlers
+│   └── fragments.go    # HTMX fragment handlers
+├── routes/             # Route configuration
+│   └── routes.go       # Route setup and mapping
+├── templates/          # HTML templates
+│   ├── pages/          # Full page templates
+│   └── fragments/      # HTMX partial templates
+├── static/             # Static assets
+│   ├── css/            # Stylesheets
+│   └── js/             # JavaScript files
 ├── go.mod              # Go dependencies
-└── .air.toml           # Air config for hot reload
+└── .air.toml           # Hot reload configuration
 ```
 
 ## License

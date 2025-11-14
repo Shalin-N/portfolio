@@ -1,7 +1,7 @@
 package main
 
 import (
-	"net/http"
+	"portfolio/routes"
 
 	"github.com/gin-gonic/gin"
 )
@@ -9,23 +9,18 @@ import (
 func main() {
 	router := gin.Default()
 
-	// Load HTML templates
-	router.LoadHTMLGlob("templates/*")
+	// Load HTML templates from both subdirectories
+	// To address later windows doesn't reliable work with the GLOB pattern
+	router.LoadHTMLFiles(
+		"templates/pages/index.html",
+		"templates/fragments/home.html",
+	)
 
 	// Serve static files
 	router.Static("/static", "./static")
 
-	// Routes
-	router.GET("/", indexPage)
-	router.GET("/home", homePage)
+	// Setup routes
+	routes.SetupRoutes(router)
 
 	router.Run(":8080")
-}
-
-func indexPage(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", nil)
-}
-
-func homePage(c *gin.Context) {
-	c.HTML(http.StatusOK, "home.html", nil)
 }
