@@ -16,13 +16,16 @@ func main() {
 	router.Static("/static", "./static")
 
 	// Routes
-	router.GET("/", homePage)
+	router.GET("/", indexPage)
+	router.GET("/home", homePage)
 
 	router.Run(":8080")
 }
 
+func indexPage(c *gin.Context) {
+	c.HTML(http.StatusOK, "index.html", nil)
+}
+
 func homePage(c *gin.Context) {
-	c.HTML(http.StatusOK, "index.html", gin.H{
-		"title": "Home",
-	})
+	c.HTML(http.StatusOK, "home.html", nil)
 }

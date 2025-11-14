@@ -5,7 +5,7 @@ A minimalist portfolio website built with Go featuring an interactive Matrix-sty
 ## Technologies
 
 - **Backend**: Go with Gin framework
-- **Frontend**: HTML5, CSS3, Vanilla JavaScript
+- **Frontend**: HTMX, CSS, JavaScript
 - **Animation**: Canvas API (Matrix digital rain effect)
 - **Dev Tools**: Air for hot reload
 
@@ -36,15 +36,12 @@ http://localhost:8080
 
 ```
 portfolio/
-├── main.go              # Main application server
-├── templates/
-│   └── index.html       # Main page with Matrix canvas
+├── main.go             # Main application server
+├── templates/          # HTML templates and fragments
 ├── static/
-│   ├── css/
-│   │   └── style.css    # Styles for Matrix theme
-│   └── js/
-│       └── matrix.js    # Matrix digital rain animation
-├── go.mod               # Go dependencies
+│   ├── css/            # Stylesheets for Matrix theme
+│   └── js/             # Matrix canvas animation scripts
+├── go.mod              # Go dependencies
 └── .air.toml           # Air config for hot reload
 ```
 
