@@ -15,6 +15,7 @@ func main() {
 		"templates/pages/index.html",
 		"templates/fragments/welcome.html",
 		"templates/fragments/timeline.html",
+		"templates/fragments/skills.html",
 	)
 
 	// Serve static files

@@ -14,4 +14,5 @@ func SetupRoutes(router *gin.Engine) {
 	// HTMX fragment routes
 	router.GET("/welcome", handlers.WelcomeFragment)
 	router.GET("/timeline", handlers.TimelineFragment)
+	router.GET("/skills", handlers.SkillsFragment)
 }

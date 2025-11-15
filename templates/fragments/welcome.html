@@ -22,12 +22,21 @@
         An experienced full-stack developer, proficient in multiple languages and frameworks, with a focus on the Microsoft stack (Azure, C#, .Net and SQL Server). Over the last 3 years I have worked on greenfield projects, modernised legacy systems, and led teams of developers. I can traverse business, people, and technology with confidence.
     </p>
     <div id="timeline-container" class="mt-8 pt-8 border-t border-green-500/20">
-        <button 
-            hx-get="/timeline" 
-            hx-target=".home-container" 
-            hx-swap="innerHTML"
-            class="text-green-500 font-mono text-lg px-6 py-3 border border-green-500/40 rounded-lg hover:bg-green-500/10 transition-all cursor-pointer bg-transparent">
-            View Projects →
-        </button>
+        <div class="flex gap-4 justify-center">
+            <button 
+                hx-get="/timeline" 
+                hx-target=".home-container" 
+                hx-swap="innerHTML"
+                class="text-green-500 font-mono text-lg px-6 py-3 border border-green-500/40 rounded-lg hover:bg-green-500/10 transition-all cursor-pointer bg-transparent">
+                View Projects →
+            </button>
+            <button 
+                hx-get="/skills" 
+                hx-target=".home-container" 
+                hx-swap="innerHTML"
+                class="text-green-500 font-mono text-lg px-6 py-3 border border-green-500/40 rounded-lg hover:bg-green-500/10 transition-all cursor-pointer bg-transparent">
+                View Skills →
+            </button>
+        </div>
     </div>
 </div>

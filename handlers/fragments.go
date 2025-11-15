@@ -33,3 +33,20 @@ func TimelineFragment(c *gin.Context) {
 		"items": items,
 	})
 }
+
+type SkillCategory struct {
+	Name   string
+	Skills []string
+}
+
+func SkillsFragment(c *gin.Context) {
+	categories := []SkillCategory{
+		{Name: "Backend Development", Skills: []string{"C#", ".NET Core", ".NET Framework", "Go", "Ruby on Rails"}},
+		{Name: "Frontend Development", Skills: []string{"JavaScript", "TypeScript", "React", "HTMX", "Ember.js", "Tailwind CSS"}},
+		{Name: "Databases & Cloud", Skills: []string{"SQL Server", "Azure CosmoDB", "MongoDB", "Azure Key Vault", "Azure"}},
+		{Name: "AI & Frameworks", Skills: []string{"Semantic Kernel", "LangChain", "MCP", "Node.js"}},
+	}
+	c.HTML(http.StatusOK, "skills.html", gin.H{
+		"categories": categories,
+	})
+}
