@@ -12,6 +12,6 @@ func SetupRoutes(router *gin.Engine) {
 	router.GET("/", handlers.IndexPage)
 
 	// HTMX fragment routes
-	router.GET("/home", handlers.HomeFragment)
+	router.GET("/welcome", handlers.WelcomeFragment)
 	router.GET("/timeline", handlers.TimelineFragment)
 }

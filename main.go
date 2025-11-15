@@ -13,7 +13,7 @@ func main() {
 	// To address later windows doesn't reliable work with the GLOB pattern
 	router.LoadHTMLFiles(
 		"templates/pages/index.html",
-		"templates/fragments/home.html",
+		"templates/fragments/welcome.html",
 		"templates/fragments/timeline.html",
 	)
 

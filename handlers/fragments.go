@@ -6,8 +6,8 @@ import (
 	"github.com/gin-gonic/gin"
 )
 
-func HomeFragment(c *gin.Context) {
-	c.HTML(http.StatusOK, "home.html", nil)
+func WelcomeFragment(c *gin.Context) {
+	c.HTML(http.StatusOK, "welcome.html", nil)
 }
 
 func TimelineFragment(c *gin.Context) {
