@@ -20,8 +20,6 @@
 <body>
     <canvas id="Matrix"></canvas>
     <script src="./static/js/matrix.js"></script>
-    <div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 max-w-2xl w-[90%] p-12 text-center bg-green-500/5 backdrop-blur-md border border-green-500/20 rounded-3xl shadow-[0_8px_32px_rgba(0,255,0,0.1)] home-container">
-        <div hx-get="/welcome" hx-trigger="load delay:2s" hx-swap="innerHTML"></div>
-    </div>
+    <div hx-get="/welcome" hx-trigger="load delay:2s" hx-swap="outerHTML"></div>
 </body>
 </html>
