@@ -38,15 +38,6 @@ func getSkillCategories() []SkillCategory {
 			},
 		},
 		{
-			Name: "Backend Development",
-			Skills: []Skill{
-				{Name: ".NET Core", URL: "https://dotnet.microsoft.com/"},
-				{Name: ".NET Framework", URL: "https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet-framework"},
-				{Name: "Go", URL: "https://go.dev/"},
-				{Name: "Ruby on Rails", URL: "https://rubyonrails.org/"},
-			},
-		},
-		{
 			Name: "Frontend Development",
 			Skills: []Skill{
 				{Name: "React", URL: "https://react.dev/"},
@@ -54,6 +45,15 @@ func getSkillCategories() []SkillCategory {
 				{Name: "HTMX", URL: "https://htmx.org/"},
 				{Name: "Node.js", URL: "https://nodejs.org/"},
 				{Name: "Ember.js", URL: "https://emberjs.com/"},
+			},
+		},
+		{
+			Name: "Backend Development",
+			Skills: []Skill{
+				{Name: ".NET Core", URL: "https://dotnet.microsoft.com/"},
+				{Name: ".NET Framework", URL: "https://dotnet.microsoft.com/en-us/learn/dotnet/what-is-dotnet-framework"},
+				{Name: "Go", URL: "https://go.dev/"},
+				{Name: "Ruby on Rails", URL: "https://rubyonrails.org/"},
 			},
 		},
 		{
