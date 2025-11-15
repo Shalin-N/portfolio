@@ -1,0 +1,115 @@
+<style>
+    @keyframes fadeInUp {
+        from { 
+            opacity: 0; 
+            transform: translateY(20px);
+        }
+        to { 
+            opacity: 1; 
+            transform: translateY(0);
+        }
+    }
+    .timeline-container {
+        animation: fadeInUp 1s ease-out forwards;
+    }
+    .timeline-item {
+        opacity: 0;
+        animation: fadeInUp 0.6s ease-out forwards;
+    }
+</style>
+
+<div class="relative w-full max-h-[600px] overflow-y-auto py-8 px-4">
+    <!-- Central vertical line -->
+    <div class="absolute left-1/2 top-8 bottom-8 w-0.5 bg-gradient-to-b from-green-500/20 via-green-500/40 to-green-500/20"></div>
+    
+    <div class="relative space-y-16">
+        <!-- Timeline Item - Right Side -->
+        <div class="timeline-item relative grid grid-cols-2 gap-8 items-center">
+            <div class="col-start-1 text-right"></div>
+            <div class="col-start-2">
+                <!-- Prong (connector line) -->
+                <div class="absolute left-0 top-1/2 -translate-x-1/2 w-8 h-0.5 bg-green-500/40"></div>
+                <!-- Node on timeline -->
+                <div class="absolute left-0 top-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(0,255,0,0.5)]"></div>
+                
+                <!-- Content card -->
+                <div class="bg-green-500/5 backdrop-blur-sm border border-green-500/20 rounded-xl p-6 hover:bg-green-500/10 transition-all">
+                    <div class="text-green-500/60 text-sm font-mono mb-2">2025</div>
+                    <h3 class="text-green-500 font-mono text-xl mb-2">Project Title</h3>
+                    <p class="text-green-500/80 font-mono text-sm leading-relaxed">
+                        Description of the project or milestone goes here.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">Go</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">HTMX</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Item - Left Side -->
+        <div class="timeline-item relative grid grid-cols-2 gap-8 items-center">
+            <div class="col-start-1 text-right">
+                <!-- Prong (connector line) -->
+                <div class="absolute right-0 top-1/2 translate-x-1/2 w-8 h-0.5 bg-green-500/40"></div>
+                <!-- Node on timeline -->
+                <div class="absolute right-0 top-1/2 translate-x-1/2 w-4 h-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(0,255,0,0.5)]"></div>
+                
+                <!-- Content card -->
+                <div class="bg-green-500/5 backdrop-blur-sm border border-green-500/20 rounded-xl p-6 hover:bg-green-500/10 transition-all">
+                    <div class="text-green-500/60 text-sm font-mono mb-2">2024</div>
+                    <h3 class="text-green-500 font-mono text-xl mb-2">Another Project</h3>
+                    <p class="text-green-500/80 font-mono text-sm leading-relaxed">
+                        Another project description here.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">React</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">Node.js</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-start-2"></div>
+        </div>
+
+        <!-- Timeline Item - Right Side -->
+        <div class="timeline-item relative grid grid-cols-2 gap-8 items-center">
+            <div class="col-start-1 text-right"></div>
+            <div class="col-start-2">
+                <div class="absolute left-0 top-1/2 -translate-x-1/2 w-8 h-0.5 bg-green-500/40"></div>
+                <div class="absolute left-0 top-1/2 -translate-x-1/2 w-4 h-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(0,255,0,0.5)]"></div>
+                
+                <div class="bg-green-500/5 backdrop-blur-sm border border-green-500/20 rounded-xl p-6 hover:bg-green-500/10 transition-all">
+                    <div class="text-green-500/60 text-sm font-mono mb-2">2023</div>
+                    <h3 class="text-green-500 font-mono text-xl mb-2">Earlier Work</h3>
+                    <p class="text-green-500/80 font-mono text-sm leading-relaxed">
+                        Description of earlier work or achievement.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">Python</span>
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">Django</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Timeline Item - Left Side -->
+        <div class="timeline-item relative grid grid-cols-2 gap-8 items-center">
+            <div class="col-start-1 text-right">
+                <div class="absolute right-0 top-1/2 translate-x-1/2 w-8 h-0.5 bg-green-500/40"></div>
+                <div class="absolute right-0 top-1/2 translate-x-1/2 w-4 h-4 rounded-full bg-green-500 shadow-[0_0_10px_rgba(0,255,0,0.5)]"></div>
+                
+                <div class="bg-green-500/5 backdrop-blur-sm border border-green-500/20 rounded-xl p-6 hover:bg-green-500/10 transition-all">
+                    <div class="text-green-500/60 text-sm font-mono mb-2">2022</div>
+                    <h3 class="text-green-500 font-mono text-xl mb-2">First Steps</h3>
+                    <p class="text-green-500/80 font-mono text-sm leading-relaxed">
+                        Where it all began.
+                    </p>
+                    <div class="mt-3 flex gap-2 flex-wrap">
+                        <span class="text-xs font-mono px-2 py-1 bg-green-500/10 border border-green-500/30 rounded">JavaScript</span>
+                    </div>
+                </div>
+            </div>
+            <div class="col-start-2"></div>
+        </div>
+    </div>
+</div>

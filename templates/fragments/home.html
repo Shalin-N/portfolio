@@ -22,8 +22,12 @@
         I'm a developer passionate about building modern web experiences with Go and HTMX.
     </p>
     <div class="mt-8 pt-8 border-t border-green-500/20">
-        <p class="text-green-500/90 font-mono text-lg">
-            Explore my work and get in touch.
-        </p>
+        <button 
+            hx-get="/timeline" 
+            hx-target=".home-container" 
+            hx-swap="innerHTML"
+            class="text-green-500 font-mono text-lg px-6 py-3 border border-green-500/40 rounded-lg hover:bg-green-500/10 transition-all cursor-pointer bg-transparent">
+            View Timeline →
+        </button>
     </div>
 </div>

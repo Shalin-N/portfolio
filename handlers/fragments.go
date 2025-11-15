@@ -9,3 +9,7 @@ import (
 func HomeFragment(c *gin.Context) {
 	c.HTML(http.StatusOK, "home.html", nil)
 }
+
+func TimelineFragment(c *gin.Context) {
+	c.HTML(http.StatusOK, "timeline.html", nil)
+}

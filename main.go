@@ -14,6 +14,7 @@ func main() {
 	router.LoadHTMLFiles(
 		"templates/pages/index.html",
 		"templates/fragments/home.html",
+		"templates/fragments/timeline.html",
 	)
 
 	// Serve static files
