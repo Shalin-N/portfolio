@@ -16,9 +16,20 @@
         opacity: 0;
         animation: fadeInUp 0.6s ease-out forwards;
     }
+    .timeline-item:nth-child(1) { animation-delay: 0.2s; }
+    .timeline-item:nth-child(2) { animation-delay: 0.4s; }
+    .timeline-item:nth-child(3) { animation-delay: 0.6s; }
+    .timeline-item:nth-child(4) { animation-delay: 0.8s; }
+    .timeline-scroll {
+        scrollbar-width: none; /* Firefox */
+        -ms-overflow-style: none; /* IE and Edge */
+    }
+    .timeline-scroll::-webkit-scrollbar {
+        display: none; /* Chrome, Safari, Opera */
+    }
 </style>
 
-<div class="relative w-full max-h-[600px] overflow-y-auto py-8 px-4">
+<div class="relative w-full max-h-[600px] overflow-y-auto py-8 px-4 timeline-scroll">
     <!-- Central vertical line -->
     <div class="absolute left-1/2 top-8 bottom-8 w-0.5 bg-gradient-to-b from-green-500/20 via-green-500/40 to-green-500/20"></div>
     
