@@ -2,11 +2,12 @@
 
 A minimalist portfolio website built with Go featuring an interactive Matrix-style animated background.
 
+🌐 **Live Site**: [shalinnaidoo.dev](https://shalinnaidoo.dev)
+
 ## Technologies
 
 - **Backend**: Go with Gin framework
 - **Frontend**: HTMX, CSS, JavaScript
-- **Animation**: Canvas API (Matrix digital rain effect)
 - **Dev Tools**: Air for hot reload
 
 ## Prerequisites
@@ -51,6 +52,15 @@ portfolio/
 ├── go.mod              # Go dependencies
 └── .air.toml           # Hot reload configuration
 ```
+
+## Deployment
+
+The site is deployed on [Fly.io](https://fly.io) in the Sydney (syd) region.
+
+- **Production URL**: https://shalinnaidoo.dev
+- **Platform**: Fly.io
+- **Region**: Sydney, Australia
+- **Auto-deployment**: Enabled via GitHub Actions on push to `main`
 
 ## License
 
