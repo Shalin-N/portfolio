@@ -36,11 +36,10 @@
     }
 </style>
 
-<div class="fixed top-1/2 left-1/2 -translate-x-1/2 -translate-y-1/2 z-10 max-w-2xl w-[90%] p-12 text-center bg-green-500/5 backdrop-blur-md border border-green-500/20 rounded-3xl shadow-[0_8px_32px_rgba(0,255,0,0.1)] home-container">
 <button 
     hx-get="/welcome" 
     hx-target=".home-container" 
-    hx-swap="outerHTML"
+    hx-swap="innerHTML"
     class="absolute top-4 left-4 text-green-500/40 hover:text-green-500/70 font-mono text-sm px-3 py-1.5 border border-green-500/20 rounded-lg hover:bg-green-500/10 transition-all cursor-pointer bg-transparent z-10">
     ← Back
 </button>
@@ -90,5 +89,4 @@
         </div>
         {{ end }}
     </div>
-</div>
 </div>
