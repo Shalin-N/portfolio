@@ -4,7 +4,7 @@
 #
 
 app = 'portfolio-weigrg'
-primary_region = 'iad'
+primary_region = 'syd'
 
 [build]
   [build.args]
