@@ -53,10 +53,9 @@
     </div>
 
     <div class="relative w-full max-h-[500px] overflow-y-auto py-8 px-4 timeline-scroll">
-        <!-- Central vertical line -->
-        <div class="absolute left-1/2 top-8 bottom-8 w-0.5 bg-gradient-to-b from-green-500/20 via-green-500/40 to-green-500/20"></div>
-        
         <div class="relative space-y-16">
+            <!-- Central vertical line -->
+            <div class="absolute left-1/2 top-8 bottom-8 w-0.5 bg-gradient-to-b from-green-500/20 via-green-500/40 to-green-500/20 -translate-x-1/2"></div>
             {{ range .items }}
             <div class="timeline-item relative grid grid-cols-2 gap-8 items-center">
                 {{ if eq .Side "right" }}
