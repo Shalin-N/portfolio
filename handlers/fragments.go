@@ -41,10 +41,12 @@ type SkillCategory struct {
 
 func SkillsFragment(c *gin.Context) {
 	categories := []SkillCategory{
-		{Name: "Backend Development", Skills: []string{"C#", ".NET Core", ".NET Framework", "Go", "Ruby on Rails"}},
-		{Name: "Frontend Development", Skills: []string{"JavaScript", "TypeScript", "React", "HTMX", "Ember.js", "Tailwind CSS"}},
-		{Name: "Databases & Cloud", Skills: []string{"SQL Server", "Azure CosmoDB", "MongoDB", "Azure Key Vault", "Azure"}},
-		{Name: "AI & Frameworks", Skills: []string{"Semantic Kernel", "LangChain", "MCP", "Node.js"}},
+		{Name: "Languages", Skills: []string{"C#", "T-SQL", "TypeScript", "Go", "Svelte", "Ruby", "React", "Python", "R", "VB"}},
+		{Name: "Backend Development", Skills: []string{".NET Core", ".NET Framework", "Go", "Ruby on Rails"}},
+		{Name: "Frontend Development", Skills: []string{"React", "SvelteKit", "HTMX", "Node.js", "Ember.js"}},
+		{Name: "DevOps & Cloud", Skills: []string{"Azure Cloud Services", "Cloudflare", "GitHub Actions", "Docker", "Kubernetes"}},
+		{Name: "Databases", Skills: []string{"SQL Server", "Azure Cosmo DB", "MongoDB", "Azure Key Vault"}},
+		{Name: "AI & Frameworks", Skills: []string{"Semantic Kernel", "Microsoft Agentic Framework", "LangChain", "MCP", "A2A"}},
 	}
 	c.HTML(http.StatusOK, "skills.html", gin.H{
 		"categories": categories,
