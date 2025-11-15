@@ -27,7 +27,7 @@ func TimelineFragment(c *gin.Context) {
 		{Year: "2025", Title: "GVC Calculation Engine", Description: "I built an engine to calculate the KiwiSaver goverment contributions owed to customers each year", Tags: []string{"C#", "SQL Server"}, Side: "left"},
 		{Year: "2024", Title: "TDA Calculation Engine", Description: "I built an engine to calculate tax entitlements related to the onshore bonds investment accounts", Tags: []string{"C#", "SQL Server"}, Side: "right"},
 		{Year: "2023", Title: "Migration Dashboard", Description: "I built a dashboard to monitor and manage data migration for newly onboarded practices using Dentally", Tags: []string{"Ruby on Rails", "Ember.js"}, Side: "left"},
-		{Year: "2023", Title: "Review Environment Data", Description: "I built a heuristic-based database seeding algorithm to populate data in review environments", Tags: []string{"Ruby on Rails"}, Side: "right"},
+		{Year: "2023", Title: "Review Environments", Description: "I built a heuristic-based database seeding algorithm to populate data in review environments", Tags: []string{"Ruby on Rails"}, Side: "right"},
 	}
 	c.HTML(http.StatusOK, "timeline.html", gin.H{
 		"items": items,
