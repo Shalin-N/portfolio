@@ -23,9 +23,9 @@ const Role = () => {
       description: "Act as the liaison between engineering, product, strategy, sales and the customer and their teams"
     },
     {
-      icon: "📊",
-      title: "Automation Driver",
-      description: "Understand and build the customer requests, but also look for new avenues for automation"
+      icon: "🔍",
+      title: "Product Detective",
+      description: "Understand and build what the customer wants, but also look for new avenues of work"
     },
     {
       icon: "🛠️",
