@@ -20,7 +20,7 @@ const Pitch = () => {
             </p>
 
             <p className="pitch-text">
-              What really sets me apart though is my people skills, I worked many roles and have learnt to communicate with all walks of people. I have the ability to traverse business, people, and technology with confidence. Call it my unfair advantage.
+              What really sets me apart though is my people skills, I worked many roles and have learnt to communicate with all walks of life. I have the ability to traverse business, people, and technology with confidence. Call it my unfair advantage.
             </p>
 
             <div className="fun-fact">
