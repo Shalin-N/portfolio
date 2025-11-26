@@ -16,7 +16,7 @@ const Pitch = () => {
             </p>
 
             <p className="pitch-text">
-              A common theme I applied through all of that was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
+              Through all those roles I was always drawn to automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
             </p>
 
             <p className="pitch-text">
