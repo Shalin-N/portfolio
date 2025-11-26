@@ -28,7 +28,7 @@ const Role = () => {
       description: "Understand and build what the customer wants, but also look for new avenues of work"
     },
     {
-      icon: "🛠️",
+      icon: "📦",
       title: "Deployment Owner",
       description: "Be on the ground to help rapidly onboard new customers, while maintaining platform stability"
     }
