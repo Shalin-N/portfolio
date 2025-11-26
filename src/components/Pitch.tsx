@@ -16,8 +16,13 @@ const Pitch = () => {
             </p>
 
             <p className="pitch-text">
-              However a common theme I applied was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
+              A common theme I applied through all of that was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
             </p>
+
+            <p className="pitch-text">
+              What really sets me apart though is my people skills, I worked many roles and have learnt to communicate with all walks of people. I have the ability to traverse business, people, and technology with confidence. Call it my unfair advantage.
+            </p>
+
             <div className="fun-fact">
               <p className="fun-fact-text">
                 <strong>Fun fact:</strong> I always wanted to be a Marine!
