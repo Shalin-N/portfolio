@@ -15,12 +15,12 @@ const Role = () => {
     {
       icon: "🌐",
       title: "API Specialist",
-      description: "Build and maintain connections to service providers, creating seamless experiences"
+      description: "Build and maintain connections to external platforms, creating seamless experiences"
     },
     {
       icon: "🤝",
       title: "Bridge Builder",
-      description: "Act as the liaison between engineering, product, strategy, sales and the customer teams"
+      description: "Act as the liaison between engineering, product, strategy, sales and the customer and their teams"
     },
     {
       icon: "📊",
