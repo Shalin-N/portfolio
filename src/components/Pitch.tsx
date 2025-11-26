@@ -16,11 +16,11 @@ const Pitch = () => {
             </p>
 
             <p className="pitch-text">
-              Through all those roles I was always drawn to automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
+              Through all those roles, I was always drawn to automation. All types of automation, such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
             </p>
 
             <p className="pitch-text">
-              What really sets me apart though is my people skills, I have learnt to communicate with all walks of life. I have the ability to traverse business, people, and technology with confidence. Call it my unfair advantage.
+              What really sets me apart, though, is my people skills. I have learnt to communicate with all walks of life. I have the ability to traverse business, people, and technology with confidence. Call it my unfair advantage.
             </p>
 
             <div className="fun-fact">
