@@ -1,0 +1,137 @@
+.role-understanding-section {
+  width: 100%;
+  max-width: 1200px;
+  padding: 2rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  animation: fadeInUp 1s ease-out;
+  text-align: center;
+}
+
+.role-header {
+  text-align: center;
+  margin-bottom: 4rem;
+}
+
+.role-header h2 {
+  font-size: 3rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  font-weight: 700;
+}
+
+.role-header p {
+  font-size: 1.2rem;
+  color: #666666;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.role-content {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+  align-items: center;
+  width: 100%;
+}
+
+.aspects-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 2rem;
+  margin-bottom: 2rem;
+}
+
+.aspect-card {
+  background: #ffffff;
+  padding: 2rem;
+  border-radius: 16px;
+  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+  text-align: center;
+  transition: all 0.3s ease;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.aspect-card:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
+  border-color: #a8c907;
+}
+
+.aspect-icon {
+  font-size: 3rem;
+  margin-bottom: 1rem;
+  display: block;
+}
+
+.aspect-card h4 {
+  font-size: 1.3rem;
+  color: #333333;
+  margin-bottom: 1rem;
+  font-weight: 600;
+  line-height: 1.4;
+}
+
+.aspect-card p {
+  color: #555555;
+  line-height: 1.6;
+  font-size: 1rem;
+}
+
+/* Animations */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@media (max-width: 1200px) {
+  .aspects-grid {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+
+@media (max-width: 768px) {
+  .role-understanding-section {
+    padding: 1rem;
+  }
+  
+  .role-header h2 {
+    font-size: 2rem;
+  }
+  
+  .aspects-grid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+  
+  .aspect-card {
+    padding: 1.5rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .role-header h2 {
+    font-size: 1.8rem;
+  }
+
+  .aspect-card {
+    padding: 1rem;
+  }
+
+  .aspect-icon {
+    font-size: 2.5rem;
+  }
+
+  .aspect-card h4 {
+    font-size: 1.1rem;
+  }
+}
