@@ -45,7 +45,7 @@ const Questions = () => {
       <div className="questions-content">
         <div className="questions-header">
           <h2>Lets Start a Conversation</h2>
-          <p>Questions I have about any role</p>
+          <p>Questions I have about any new role</p>
         </div>
 
         <div className="questions-grid">

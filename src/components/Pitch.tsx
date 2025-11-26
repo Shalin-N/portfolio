@@ -12,7 +12,11 @@ const Pitch = () => {
         <div className="pitch-body">
           <div className="elevator-pitch">
             <p className="pitch-text">
-              The kind of person who likes to write my own playbook. I've spent 3 years building software across the spectrum, but I was always drawn to automation.
+              I've been writing code since I was 16 years old and have worked all across Tech (Production Support, Operations Research, Front-end, UI Design, Back-end, API integrations, Solution Architecture, Development Team Lead, Dev Ops, AI Engineering).
+            </p>
+
+            <p className="pitch-text">
+              However a common trend I followed was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
             </p>
             <div className="fun-fact">
               <p className="fun-fact-text">

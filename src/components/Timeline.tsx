@@ -31,7 +31,7 @@ const Timeline = () => {
       year: "Present",
       title: "Project Overlord",
       company: "FNZ",
-      description: "Built a platform to mesh all the different FNZ systems together for a unified data experience.",
+      description: "Building a platform to mesh all the different FNZ systems together for a unified data experience.",
       technologies: ["Jira API", "GitHub API", "Azure DevOps API", "React"]
     },
     {
