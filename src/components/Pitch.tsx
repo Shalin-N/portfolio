@@ -16,7 +16,7 @@ const Pitch = () => {
             </p>
 
             <p className="pitch-text">
-              However a common trend I followed was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
+              However a common theme I applied was automation. All types of automation such as automating my own workflow, making the platform more efficient, or designing processes that accelerate my team.
             </p>
             <div className="fun-fact">
               <p className="fun-fact-text">
