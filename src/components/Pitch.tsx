@@ -6,7 +6,7 @@ const Pitch = () => {
       <div className="pitch-content">
         <div className="pitch-header">
           <h1 className="name">Shalin Naidoo</h1>
-          <p className="tagline">I am a Creative that became an Software Engineer </p>
+          <p className="tagline">I am a Creative that became a Software Engineer </p>
         </div>
         
         <div className="pitch-body">
