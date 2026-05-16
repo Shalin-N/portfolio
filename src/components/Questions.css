@@ -1,130 +1,116 @@
 .questions-section {
   width: 100%;
-  max-width: 1200px;
-  text-align: center;
-  border-radius: 0px;
-  padding: 3rem 2rem;
-  animation: fadeInUp 1s ease-out;
+  max-width: 1100px;
   margin: 0 auto;
 }
 
+.questions-content { width: 100%; }
+
 .questions-header {
-  margin-bottom: 3rem;
+  text-align: center;
+  margin-bottom: 2.5rem;
 }
 
 .questions-header h2 {
-  font-size: 3rem;
-  color: #333333;
-  margin-bottom: 1rem;
-  font-weight: 700;
+  display: inline-block;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: clamp(2.4rem, 6vw, 4rem);
+  letter-spacing: -0.03em;
+  background: var(--yellow);
+  color: var(--ink);
+  padding: 0.4rem 1.4rem;
+  border: var(--border-thick);
+  border-radius: var(--radius);
+  box-shadow: var(--shadow-lg);
+  transform: rotate(1.5deg);
 }
 
 .questions-header p {
-  font-size: 1.2rem;
-  color: #666666;
-  max-width: 600px;
-  margin: 0 auto;
+  font-family: var(--font-mono);
+  font-weight: 500;
+  font-size: 0.95rem;
+  color: var(--ink-soft);
+  margin-top: 1.25rem;
 }
 
 .questions-grid {
   display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-  gap: 1.5rem;
-  margin-bottom: 4rem;
+  grid-template-columns: repeat(auto-fit, minmax(270px, 1fr));
+  gap: 1.4rem;
 }
 
 .question-card {
-  background: #ffffff;;
-  padding: 2rem;
-  border-radius: 16px;
-  box-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
-  border: 1px solid rgba(0, 0, 0, 0.1);
-  transition: all 0.3s ease;
+  position: relative;
+  background: var(--paper);
+  border: var(--border-thick);
+  border-radius: var(--radius);
+  padding: 1.6rem 1.3rem 1.4rem;
+  box-shadow: var(--shadow);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: flex;
+  flex-direction: column;
+  gap: 0.65rem;
 }
 
+.question-card:nth-child(6n+1) { background: #fff; transform: rotate(-1.2deg); }
+.question-card:nth-child(6n+2) { background: var(--mint); transform: rotate(1deg); }
+.question-card:nth-child(6n+3) { background: var(--pink); transform: rotate(-0.8deg); }
+.question-card:nth-child(6n+4) { background: var(--lime); transform: rotate(1.2deg); }
+.question-card:nth-child(6n+5) { background: var(--lilac); transform: rotate(-1.5deg); }
+.question-card:nth-child(6n+6) { background: var(--coral); transform: rotate(1deg); }
+
 .question-card:hover {
-  transform: translateY(-5px);
-  box-shadow: 0 15px 40px rgba(0, 0, 0, 0.15);
-  border-color: #a8c907;
+  transform: rotate(0deg) translate(-3px, -3px);
+  box-shadow: var(--shadow-lg);
+}
+
+.question-card::before {
+  content: '?';
+  position: absolute;
+  top: -16px;
+  right: -10px;
+  width: 40px;
+  height: 40px;
+  background: var(--ink);
+  color: var(--yellow);
+  border: var(--border);
+  border-radius: 50%;
+  display: grid;
+  place-items: center;
+  font-family: var(--font-display);
+  font-weight: 800;
+  font-size: 1.3rem;
+  box-shadow: var(--shadow-sm);
+  transform: rotate(8deg);
 }
 
 .question-icon {
-  font-size: 2.5rem;
-  margin-bottom: 1rem;
-  display: block;
+  display: inline-grid;
+  place-items: center;
+  width: 56px;
+  height: 56px;
+  font-size: 1.7rem;
+  background: var(--paper);
+  border: var(--border);
+  border-radius: 14px;
+  box-shadow: var(--shadow-sm);
 }
 
 .question-text {
-  font-size: 1.3rem;
-  font-weight: 600;
-  color: #333333;
-  margin-bottom: 1rem;
-  line-height: 1.4;
+  font-family: var(--font-display);
+  font-weight: 700;
+  font-size: 1.15rem;
+  line-height: 1.2;
+  letter-spacing: -0.02em;
+  color: var(--ink);
 }
 
 .question-description {
-  color: #666666;
-  font-size: 1rem;
-  line-height: 1.6;
-  margin: 0;
+  font-size: 0.92rem;
+  color: var(--ink-soft);
 }
 
-
-
-/* Animations */
-@keyframes fadeInUp {
-  from {
-    opacity: 0;
-    transform: translateY(30px);
-  }
-  to {
-    opacity: 1;
-    transform: translateY(0);
-  }
-}
-
-/* Responsive Design */
 @media (max-width: 768px) {
-  .questions-section {
-    padding: 2rem 1rem;
-    max-width: 95%;
-  }
-
-  .questions-title {
-    font-size: 2.2rem;
-  }
-
-  .questions-subtitle {
-    font-size: 1rem;
-  }
-
-  .questions-grid {
-    grid-template-columns: 1fr;
-    gap: 1rem;
-    margin-bottom: 3rem;
-  }
-
-  .question-card {
-    padding: 1.5rem;
-  }
-
-  .question-icon {
-    font-size: 2rem;
-  }
-
-  .question-text {
-    font-size: 1.1rem;
-  }
-
-
-}
-
-@media (max-width: 480px) {
-  .questions-title {
-    font-size: 1.8rem;
-  }
-
-  .question-card {
-    padding: 1rem;
-  }
+  .questions-grid { grid-template-columns: 1fr; gap: 1.2rem; }
 }
