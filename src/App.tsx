@@ -1,50 +1,38 @@
-import { useState } from 'react'
 import './App.css'
-import Pitch from './components/Pitch'
-import Timeline from './components/Timeline'
+import Waves from './components/Waves'
 import Skills from './components/Skills'
-import Role from './components/Role'
-import Questions from './components/Questions'
-import ParticlesBackground from './components/ParticlesBackground'
 
 function App() {
-  const [currentPage, setCurrentPage] = useState(0)
-
-  const pages = [
-    { name: 'Pitch', component: <Pitch /> },
-    { name: 'Experience', component: <Timeline /> },
-    { name: 'Skills', component: <Skills /> },
-    { name: 'Role', component: <Role /> },
-    { name: 'Questions', component: <Questions /> }
-  ]
-
-  const goToPage = (pageIndex: number) => {
-    setCurrentPage(pageIndex)
+  const scrollTo = (id: string) => {
+    document.getElementById(id)?.scrollIntoView({ behavior: 'smooth' })
   }
 
   return (
-    <div className="App">
-      <ParticlesBackground />
-      
-      <nav className="navigation">
-        <div className="nav-items">
-          {pages.map((page, index) => (
-            <button
-              key={index}
-              className={`nav-button ${currentPage === index ? 'active' : ''}`}
-              onClick={() => goToPage(index)}
-            >
-              <span className="nav-label">{page.name}</span>
-            </button>
-          ))}
+    <div className="app">
+      <nav className="nav">
+        <button onClick={() => scrollTo('top')} className="nav-brand">SN</button>
+        <div className="nav-links">
+          <button onClick={() => scrollTo('skills')}>Skills</button>
         </div>
       </nav>
 
-      <main className="page-container">
-        <div className={`page active`}>
-          {pages[currentPage].component}
+      <section id="top" className="hero">
+        <Waves />
+        <div className="hero-content">
+          <h1>Shalin Naidoo</h1>
         </div>
-      </main>
+        <button className="hero-scroll" onClick={() => scrollTo('skills')} aria-label="Scroll down">
+          <span />
+        </button>
+      </section>
+
+      <section id="skills" className="section">
+        <Skills />
+      </section>
+
+      <footer className="footer">
+        <span>Shalin Naidoo · {new Date().getFullYear()}</span>
+      </footer>
     </div>
   )
 }

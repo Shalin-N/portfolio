@@ -1,48 +1,35 @@
 import './Skills.css';
 
 const Skills = () => {
-  const roleAspects = [
-    {
-      icon: "🔧",
-      title: "Technical Architect",
-      description: "Own the end-to-end design and implementation of solutions, ensuring scalability and maintainability"
-    },
-    {
-      icon: "👥",
-      title: "Team Builder",
-      description: "Foster a collaborative environment that encourages challenging and winning together"
-    },
-    {
-      icon: "🧠",
-      title: "Self-Directed Learner",
-      description: "Work well in unstructured settings, proactively acquiring new skills and knowledge as needed"
-    },
-    {
-      icon: "🗣️",
-      title: "Clear Communicator",
-      description: "Understand my audience and convey complex technical concepts in an accessible manner"
-    }
+  const items = [
+    { title: 'Technical Architect', description: 'Own the end-to-end design and implementation of solutions, ensuring scalability and maintainability.' },
+    { title: 'Team Builder', description: 'Foster a collaborative environment that encourages challenging and winning together.' },
+    { title: 'Self-Directed Learner', description: 'Work well in unstructured settings, proactively acquiring new skills and knowledge as needed.' },
+    { title: 'Clear Communicator', description: 'Understand my audience and convey complex technical concepts in an accessible manner.' },
+    { title: 'Customer-First Engineer', description: 'Work directly with customers to solve their unique challenges.' },
+    { title: 'Production Mechanic', description: 'Handle real-time production issues in live systems, ensuring uptime for critical operations.' },
+    { title: 'API Specialist', description: 'Build and maintain connections to external platforms, creating seamless experiences.' },
+    { title: 'Bridge Builder', description: 'Act as the liaison between engineering, product, strategy, sales, and the customer.' },
+    { title: 'Product Detective', description: 'Understand and build what the customer wants, while looking for new avenues of work.' },
+    { title: 'Deployment Owner', description: 'Be on the ground to help rapidly onboard new customers, while maintaining platform stability.' },
   ];
 
   return (
-    <div className="skills-section">
-      <div className="skills-header">
-        <h2>My Skillset</h2>
-        <p>A summary of my key skills and strengths</p>
+    <div className="skills">
+      <div className="section-header">
+        <div className="section-eyebrow">Skills</div>
+        <h2 className="section-title">What I bring</h2>
+        <p className="section-subtitle">A summary of my key strengths and how I contribute.</p>
       </div>
 
-      <div className="skills-content">
-        <div className="skills-aspects">
-          <div className="skills-grid">
-            {roleAspects.map((aspect, index) => (
-              <div key={index} className="skills-card">
-                <div className="skills-icon">{aspect.icon}</div>
-                <h4>{aspect.title}</h4>
-                <p>{aspect.description}</p>
-              </div>
-            ))}
+      <div className="skills-grid">
+        {items.map((item, i) => (
+          <div key={item.title} className="skill-card">
+            <span className="skill-num">{String(i + 1).padStart(2, '0')}</span>
+            <h3 className="skill-title">{item.title}</h3>
+            <p className="skill-desc">{item.description}</p>
           </div>
-        </div>
+        ))}
       </div>
     </div>
   );
