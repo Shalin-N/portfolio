@@ -27,10 +27,16 @@
 }
 
 .nav-brand {
-  font-family: 'Fraunces', serif;
-  font-size: 1.1rem;
-  letter-spacing: 0.02em;
+  font-family: 'Inter', sans-serif;
+  font-weight: 900;
+  font-size: 1.4rem;
+  letter-spacing: -0.02em;
   color: var(--fg);
+  transition: opacity 0.2s ease;
+}
+
+.nav-brand:hover {
+  opacity: 0.7;
 }
 
 .nav-links {
@@ -87,36 +93,6 @@
   mix-blend-mode: difference;
   text-align: center;
   padding: 0 1rem;
-}
-
-.hero-scroll {
-  position: absolute;
-  bottom: 2rem;
-  left: 50%;
-  transform: translateX(-50%);
-  width: 28px;
-  height: 44px;
-  border: 1px solid rgba(255, 255, 255, 0.5);
-  border-radius: 14px;
-  z-index: 3;
-  display: flex;
-  justify-content: center;
-  padding-top: 8px;
-}
-
-.hero-scroll span {
-  display: block;
-  width: 2px;
-  height: 8px;
-  background: rgba(255, 255, 255, 0.8);
-  border-radius: 1px;
-  animation: scrollHint 1.6s ease-in-out infinite;
-}
-
-@keyframes scrollHint {
-  0%   { transform: translateY(0); opacity: 1; }
-  60%  { transform: translateY(12px); opacity: 0; }
-  100% { transform: translateY(0); opacity: 0; }
 }
 
 /* ---------- Sections ---------- */

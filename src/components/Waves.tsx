@@ -12,14 +12,12 @@ interface WavesProps {
   className?: string
   strokeColor?: string
   backgroundColor?: string
-  pointerSize?: number
 }
 
 export default function Waves({
   className = '',
   strokeColor = '#ffffff',
   backgroundColor = '#000000',
-  pointerSize = 0.5,
 }: WavesProps) {
   const containerRef = useRef<HTMLDivElement>(null)
   const svgRef = useRef<SVGSVGElement>(null)
@@ -203,21 +201,6 @@ export default function Waves({
       } as React.CSSProperties}
     >
       <svg ref={svgRef} xmlns="http://www.w3.org/2000/svg" style={{ display: 'block' }} />
-      <div
-        className="waves-pointer"
-        style={{
-          position: 'absolute',
-          top: 0,
-          left: 0,
-          width: `${pointerSize}rem`,
-          height: `${pointerSize}rem`,
-          background: strokeColor,
-          borderRadius: '50%',
-          transform: 'translate3d(calc(var(--x, -10px) - 50%), calc(var(--y, 50%) - 50%), 0)',
-          willChange: 'transform',
-          pointerEvents: 'none',
-        }}
-      />
     </div>
   )
 }

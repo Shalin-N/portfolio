@@ -10,7 +10,7 @@ function App() {
   return (
     <div className="app">
       <nav className="nav">
-        <button onClick={() => scrollTo('top')} className="nav-brand">SN</button>
+        <button onClick={() => scrollTo('top')} className="nav-brand" aria-label="Top">S</button>
         <div className="nav-links">
           <button onClick={() => scrollTo('skills')}>Skills</button>
         </div>
@@ -19,11 +19,8 @@ function App() {
       <section id="top" className="hero">
         <Waves />
         <div className="hero-content">
-          <h1>Shalin Naidoo</h1>
+          <h1>Shalin</h1>
         </div>
-        <button className="hero-scroll" onClick={() => scrollTo('skills')} aria-label="Scroll down">
-          <span />
-        </button>
       </section>
 
       <section id="skills" className="section">

@@ -6,12 +6,10 @@ const Skills = () => {
     { title: 'Team Builder', description: 'Foster a collaborative environment that encourages challenging and winning together.' },
     { title: 'Self-Directed Learner', description: 'Work well in unstructured settings, proactively acquiring new skills and knowledge as needed.' },
     { title: 'Clear Communicator', description: 'Understand my audience and convey complex technical concepts in an accessible manner.' },
-    { title: 'Customer-First Engineer', description: 'Work directly with customers to solve their unique challenges.' },
+    { title: 'Customer-First Engineer', description: 'Work directly with customers to solve their unique challenges, building what they want while looking for new avenues of work.' },
     { title: 'Production Mechanic', description: 'Handle real-time production issues in live systems, ensuring uptime for critical operations.' },
     { title: 'API Specialist', description: 'Build and maintain connections to external platforms, creating seamless experiences.' },
     { title: 'Bridge Builder', description: 'Act as the liaison between engineering, product, strategy, sales, and the customer.' },
-    { title: 'Product Detective', description: 'Understand and build what the customer wants, while looking for new avenues of work.' },
-    { title: 'Deployment Owner', description: 'Be on the ground to help rapidly onboard new customers, while maintaining platform stability.' },
   ];
 
   return (
@@ -19,7 +17,6 @@ const Skills = () => {
       <div className="section-header">
         <div className="section-eyebrow">Skills</div>
         <h2 className="section-title">What I bring</h2>
-        <p className="section-subtitle">A summary of my key strengths and how I contribute.</p>
       </div>
 
       <div className="skills-grid">
